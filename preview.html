@@ -1,274 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Umesh Pathak | Faculty Profile</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body{
-background:#f5f7fa;
-}
-
-/* Header */
-
-header{
-background:linear-gradient(135deg,#003366,#0055a5);
-color:white;
-text-align:center;
-padding:40px 20px;
-}
-
-.profile-img{
-width:150px;
-height:150px;
-border-radius:50%;
-border:5px solid white;
-margin-bottom:15px;
-}
-
-header h1{
-font-size:32px;
-margin-bottom:5px;
-}
-
-header p{
-font-size:16px;
-opacity:0.9;
-}
-
-/* Navigation */
-
-nav{
-background:white;
-padding:15px;
-text-align:center;
-box-shadow:0px 2px 10px rgba(0,0,0,0.1);
-position:sticky;
-top:0;
-z-index:100;
-}
-
-nav a{
-text-decoration:none;
-margin:15px;
-color:#003366;
-font-weight:600;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#0073e6;
-}
-
-/* Sections */
-
-.container{
-width:90%;
-max-width:1100px;
-margin:auto;
-}
-
-section{
-background:white;
-margin:20px 0;
-padding:25px;
-border-radius:8px;
-box-shadow:0 4px 15px rgba(0,0,0,0.05);
-}
-
-section h2{
-color:#003366;
-margin-bottom:15px;
-border-bottom:2px solid #0055a5;
-display:inline-block;
-padding-bottom:5px;
-}
-
-ul{
-margin-left:20px;
-line-height:1.8;
-}
-
-/* Contact */
-
-.contact p{
-margin:8px 0;
-}
-
-/* Footer */
-
-footer{
-background:#003366;
-color:white;
-text-align:center;
-padding:15px;
-margin-top:20px;
-}
-
-/* Mobile Responsive */
-
-@media(max-width:768px){
-
-header h1{
-font-size:24px;
-}
-
-nav a{
-display:block;
-margin:10px 0;
-}
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #003366; color: white; padding: 10px 20px; text-align: center; }
+        nav { margin: 20px 0; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        .container { padding: 20px; }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header { font-size: 1.2em; }
+            nav a { display: block; margin: 10px 0; }
+        }
+        /* Animations */
+        .fade-in { animation: fadeIn 2s; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
 </head>
-
 <body>
-
-<header>
-
-<img src="My-Photo.jpeg" class="profile-img">
-
-<h1>Umesh Pathak</h1>
-
-<p>Assistant Professor | Department of Artificial Intelligence</p>
-
-<p>Galgotias College of Engineering and Technology</p>
-
-</header>
-
-<nav>
-
-<a href="#about">About</a>
-<a href="#education">Education</a>
-<a href="#experience">Experience</a>
-<a href="#subjects">Subjects</a>
-<a href="#research">Research</a>
-<a href="#publications">Publications</a>
-<a href="#contact">Contact</a>
-
-</nav>
-
-<div class="container">
-
-<section id="about">
-
-<h2>About Me</h2>
-
-<p>
-Assistant Professor in the Department of Artificial Intelligence at Galgotias College of Engineering and Technology. 
-My research interests include Cloud Computing and Machine Learning. 
-I am passionate about teaching, research, and student mentoring.
-</p>
-
-</section>
-
-<section id="education">
-
-<h2>Education</h2>
-
-<ul>
-<li>PhD (Pursuing)</li>
-<li>M.Tech - Computer Science</li>
-<li>B.Tech - Computer Science</li>
-</ul>
-
-</section>
-
-<section id="experience">
-
-<h2>Experience</h2>
-
-<ul>
-<li>Assistant Professor – Galgotias College of Engineering and Technology</li>
-<li>Teaching Experience – 5+ Years</li>
-</ul>
-
-</section>
-
-<section id="subjects">
-
-<h2>Subjects Taught</h2>
-
-<ul>
-<li>Discrete Mathematics</li>
-<li>Object Oriented Programming with Java</li>
-<li>Compiler Design</li>
-<li>Theory of Automata</li>
-</ul>
-
-</section>
-
-<section id="research">
-
-<h2>Research Interests</h2>
-
-<ul>
-<li>Cloud Computing</li>
-<li>Machine Learning</li>
-</ul>
-
-</section>
-
-<section id="publications">
-
-<h2>Publications</h2>
-
-<ul>
-
-<li>
-<a href="https://doi.org/10.1109/ICDSINC66221.2025.11448274" target="_blank">
-IEEE Conference Paper 2025
-</a>
-</li>
-
-<li>
-<a href="https://ieeexplore.ieee.org/document/11387457" target="_blank">
-IEEE Xplore Research Paper
-</a>
-</li>
-
-</ul>
-
-</section>
-
-<section id="contact" class="contact">
-
-<h2>Contact</h2>
-
-<p>Email: 
-<a href="mailto:umesh.pathak@galgotiacollege.edu">
-umesh.pathak@galgotiacollege.edu
-</a>
-</p>
-
-<p>Mobile: 9335214053</p>
-
-<p>Department: Artificial Intelligence</p>
-
-<p>Galgotias College of Engineering and Technology, Greater Noida</p>
-
-</section>
-
-</div>
-
-<footer>
-
-<p>© 2026 Umesh Pathak | Faculty Website</p>
-
-</footer>
-
+    <header>
+        <h1>Welcome to Our Faculty Website</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container fade-in">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>This is where you can learn more about our faculty and staff.</p>
+        </section>
+        <section id="courses">
+            <h2>Courses</h2>
+            <p>Details about the courses we offer.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Contact form or contact details.</p>
+        </section>
+    </div>
 </body>
-
 </html>
